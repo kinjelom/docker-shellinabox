@@ -17,7 +17,6 @@ ENV SIAB_VERSION=2.19 \
   SIAB_PKGS=none \
   SIAB_SCRIPT=none
 
-RUN apt-get update && apt-get install -y net-tools telnet netcat traceroute
 RUN apt-get update && apt-get install -y openssl curl openssh-client sudo \
       shellinabox=${SIAB_VERSION} && \
   apt-get clean && \
