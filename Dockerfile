@@ -19,6 +19,7 @@ ENV SIAB_VERSION=2.19 \
 
 RUN apt-get update && apt-get install -y openssl curl openssh-client sudo \
   net-tools telnet netcat inetutils-traceroute \
+  mc cpuburn \
   shellinabox=${SIAB_VERSION} && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
